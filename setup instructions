@@ -1,0 +1,62 @@
+Prerequisites
+Before setting up the system, ensure that you have the following installed:
+
+Python 3.6+
+Pip (Python package installer)
+If Python is not installed, you can download it from the official Python website: https://www.python.org/downloads/.
+
+Step 1: Clone the Repository
+Clone the project repository to your local machine using Git. Open your terminal or command prompt and run the following command:
+
+bash
+Copy
+git clone https://github.com/yourusername/Emotion-Recognition-System.git
+cd Emotion-Recognition-System
+Replace yourusername with your actual GitHub username.
+
+Step 2: Install Dependencies
+Install the required Python libraries using pip. Run the following command in your terminal:
+
+bash
+Copy
+pip install -r requirements.txt
+This will install the necessary libraries such as TensorFlow, OpenCV, Keras, Numpy, and others required to run the system.
+
+Step 3: Download the Pre-trained Model
+If you don't have the pre-trained model (emotion_model.h5), you can download it from the source or use an alternative model. Place the emotion_model.h5 file inside the model/ directory of the project.
+
+Note: You can train your own model using datasets like FER-2013 or AffectNet, but for simplicity, this repository assumes you already have the model.
+
+Step 4: Run the Emotion Recognition System
+Now you're ready to run the emotion recognition system. Open your terminal and use the following command:
+
+bash
+Copy
+python app.py
+The system will open your webcam, detect faces, and display the predicted emotions in real time.
+
+Step 5: Use the System
+Once you run the application, it will start detecting faces and emotions in real-time.
+The emotions will be displayed next to the faces on your screen.
+Press ESC to close the application.
+Model Details
+The pre-trained model used in this project is trained on the FER-2013 dataset.
+The model recognizes the following emotions:
+Anger
+Disgust
+Fear
+Happiness
+Sadness
+Surprise
+Neutral
+If you wish to use a custom-trained model, replace the emotion_model.h5 file in the model/ folder with your custom model.
+
+Optional: Training Your Own Model
+If you'd like to train your own emotion recognition model, you can use datasets such as FER-2013, AffectNet, or CK+. You can find tutorials online for training emotion recognition models with Keras and TensorFlow.
+
+Troubleshooting
+OpenCV errors: Make sure your webcam is connected properly and accessible by OpenCV.
+TensorFlow/Keras errors: Ensure you have the correct Python and library versions. You can create a virtual environment to avoid version conflicts.
+License:
+This project is licensed under the MIT License - see the LICENSE file for details.
+
